@@ -1,0 +1,171 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', Helvetica, sans-serif; /* Changed to a clean, modern sans-serif font */
+  background: linear-gradient(to bottom, #f0fff4, #e8f5e8); /* Changed to a subtle light green gradient for a fresh look */
+  color: #333;
+  line-height: 1.6;
+  text-align: center; /* Ensure overall text alignment is centered */
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #008323, #00a344); /* Kept green gradient */
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.banner {
+  color: white;
+  font-size: 1.4em;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.banner:hover {
+  opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Enhanced centering */
+  padding: 40px 20px;
+  background: #f9fff9; /* Changed to very light green for cohesion */
+}
+
+.main-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: block;
+  margin: 0 auto; /* Ensures image is perfectly centered */
+}
+
+.hero-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.1em;
+  color: #444;
+  padding: 0 20px; /* Added padding for better mobile centering */
+}
+
+/* Sidebar */
+.sidebar {
+  padding: 30px 20px;
+  background: #e8f5e8; /* Changed to light green to match theme */
+  border-top: 1px solid #d0e8d0; /* Adjusted border to light green tint */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center sidebar content */
+  justify-content: center;
+}
+
+.sidebar h3 {
+  margin-bottom: 10px;
+  color: #00a30e; /* Kept green */
+  text-align: center;
+}
+
+.sidebar p {
+  margin-bottom: 20px;
+  font-size: 1em;
+  max-width: 600px; /* Limit width for better centering */
+  text-align: center;
+}
+
+/* Button Link */
+.button-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0a6f25; /* Kept green */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 10px auto; /* Center buttons if used in flow */
+}
+
+.button-link:hover {
+  background-color: #044d00; /* Kept green */
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* Enhanced vertical centering */
+  gap: 30px;
+  padding: 40px 20px;
+  background: #f9fff9; /* Changed to light green for consistency */
+}
+
+.feature-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto; /* Ensure images are centered within flex items */
+}
+
+.feature-image:hover {
+  transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+  background: #1a3c1a; /* Changed to dark green for theme cohesion */
+  color: #eee;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #90ee90; /* Changed link color to a light green tint for harmony */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #a8e6a8; /* Lighter green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-text {
+    padding: 0 10px;
+  }
+
+  .sidebar {
+    padding: 20px 10px; /* Reduced padding on mobile for better fit */
+  }
+}
